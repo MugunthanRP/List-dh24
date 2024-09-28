@@ -43,23 +43,23 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Specific styles for Gold, Silver, Bronze, Total */
+/* Specific text colors for Gold, Silver, Bronze, Total */
 .col-md-1 h2 {
     margin: 0;
 }
 
 .col-md-1:nth-child(1) {
-    background-color: #ffdf00; /* Gold background */
+    color: #ffdf00; /* Gold text color */
 }
 
 .col-md-1:nth-child(2) {
-    background-color: #c0c0c0; /* Silver background */
+    color: #c0c0c0; /* Silver text color */
 }
 
 .col-md-1:nth-child(3) {
-    background-color: #cd7f32; /* Bronze background */
+    color: #cd7f32; /* Bronze text color */
 }
 
 .col-md-1:last-child {
-    background-color: #f0f0f0; /* Total background */
+    color: #333; /* Total text color */
 }
