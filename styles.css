@@ -1,0 +1,65 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #007BFF;
+}
+
+.row-md-4 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.col-md-1 {
+    flex: 1;
+    margin: 0 10px;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    line-height: 1.5;
+}
+
+a:hover {
+    color: #007BFF;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Specific text colors for Gold, Silver, Bronze, Total */
+.col-md-1 h2 {
+    margin: 0;
+}
+
+.col-md-1:nth-child(1) {
+    color: #ffdf00; /* Gold text color */
+}
+
+.col-md-1:nth-child(2) {
+    color: #c0c0c0; /* Silver text color */
+}
+
+.col-md-1:nth-child(3) {
+    color: #cd7f32; /* Bronze text color */
+}
+
+.col-md-1:last-child {
+    color: #333; /* Total text color */
+}
