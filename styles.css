@@ -7,59 +7,56 @@ body {
     padding: 20px;
 }
 
-h1 {
-    text-align: center;
-    color: #007BFF;
-}
-
 .row-md-4 {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .col-md-1 {
     flex: 1;
-    margin: 0 10px;
     padding: 10px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
 }
 
 a {
     text-decoration: none;
-    color: #333;
-    line-height: 1.5;
+    color: #555;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 4px;
 }
 
 a:hover {
-    color: #007BFF;
+    background-color: #e2e2e2;
 }
 
-h2 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 10px;
+div:nth-child(2) {
+    flex: 3;
 }
 
-/* Specific styles for Gold, Silver, Bronze, Total */
-.col-md-1 h2 {
-    margin: 0;
+div:nth-child(3) {
+    color: #ffcc00; /* Gold */
 }
 
-.col-md-1:nth-child(1) {
-    background-color: #ffdf00; /* Gold background */
+div:nth-child(4) {
+    color: #c0c0c0; /* Silver */
 }
 
-.col-md-1:nth-child(2) {
-    background-color: #c0c0c0; /* Silver background */
+div:nth-child(5) {
+    color: #cd7f32; /* Bronze */
 }
 
-.col-md-1:nth-child(3) {
-    background-color: #cd7f32; /* Bronze background */
+div:last-child {
+    flex: 2;
 }
 
-.col-md-1:last-child {
-    background-color: #f0f0f0; /* Total background */
-}
